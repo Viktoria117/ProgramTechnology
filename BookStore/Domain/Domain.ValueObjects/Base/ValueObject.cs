@@ -1,4 +1,6 @@
-﻿namespace Domain.ValueObjects.Base;
+﻿using Domain.ValueObjects.Exceptions;
+
+namespace Domain.ValueObjects.Base;
 
 public abstract class ValueObject<T> : IEquatable<ValueObject<T>>
 {

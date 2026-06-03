@@ -1,8 +1,23 @@
 <Solution>
   <Folder Name="/Application/" />
   <Folder Name="/Domain/">
-    <Project Path="Domain/Domain.ValueObjects/Domain.ValueObjects.csproj" />
+    <Project Path="Domain/Domain.ValueObjects/BookStore.ValueObjects.csproj" />
   </Folder>
-  <Folder Name="/Infrastructure/" />
+  <Folder Name="/Domain/Entities/">
+    <File Path="Domain/Entities/Book.cs" />
+    <File Path="Domain/Entities/Customer.cs" />
+    <File Path="Domain/Entities/Order.cs" />
+    <File Path="Domain/Entities/OrderItem.cs" />
+    <File Path="Domain/Entities/Seller.cs" />
+  </Folder>
+  <Folder Name="/Domain/Enums/">
+    <File Path="Domain/Enums/OrderStatus.cs" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <File Path="Infrastructure/BookStore.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/Data/">
+    <File Path="BookStoreDbContext.cs" />
+  </Folder>
   <Folder Name="/Presentation/" />
 </Solution>
