@@ -27,4 +27,7 @@ public sealed class Quantity : ValueObject<int>
 
     public static bool operator <=(Quantity left, Quantity right)
         => left.Value <= right.Value;
+
+    public static implicit operator int(Quantity quantity)
+        => quantity.Value;
 }

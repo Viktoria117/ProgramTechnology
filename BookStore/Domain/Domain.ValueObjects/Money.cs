@@ -27,4 +27,7 @@ public sealed class Money : ValueObject<decimal>
 
     public static bool operator <=(Money left, Money right)
         => left.Value <= right.Value;
+
+    public static implicit operator decimal(Money money)
+        => money.Value;
 }

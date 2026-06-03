@@ -27,4 +27,7 @@ public sealed class BookStock : ValueObject<int>
 
     public static bool operator <=(BookStock left, BookStock right)
         => left.Value <= right.Value;
+
+    public static implicit operator int(BookStock stock)
+        => stock.Value;
 }
